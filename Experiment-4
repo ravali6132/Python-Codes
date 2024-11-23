@@ -1,0 +1,104 @@
+18) # Define the input and output file names 
+import os
+input_file_name = 'source.txt'
+output_file_name = 'sorted_words.txt'
+if not os.path.exists(input_file_name):
+    print(f"Error: Input file '{input_file_name}' not found.")
+else:
+    with open(input_file_name, 'r') as infile:
+        sorted_words = sorted(infile.read().splitlines(), key=str.lower)      
+    with open(output_file_name, 'w') as outfile:
+        outfile.write('\n'.join(sorted_words))
+    print(f"Sorted words have been written to '{output_file_name}'.")
+
+
+19) 
+def print_lines_in_reverse(filename):
+    try:
+        with open(filename, 'r') as file:
+            for line in file:
+                print(line.strip()[::-1])
+    except FileNotFoundError:
+        print(f"File '{filename}' not found.")
+filename = 'example.txt'
+print_lines_in_reverse(filename)
+
+
+20)
+with open("f:\\mytxt.txt","r") as file: 
+     f=file.read() 
+     chr_cnt=len(f) 
+     word_cnt=len(f.split()) 
+     line_cnt=f.count('\n')+1 
+print("No. of Characters:",chr_cnt) 
+print("No. of Words:",word_cnt) 
+print("No. of Lines:",line_cnt)
+
+
+21)
+import array 
+arr=array.array('i',[1,2,3,4,5])  
+print(arr) 
+arr.append(32) 
+print(arr) 
+arr.insert(3,32) 
+print(arr) 
+arr.reverse() 
+print(arr)
+
+
+22)
+#Adding two Matrix
+a = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+b = [[1, 1, 1], [1, 1, 1], [1, 1, 1]]
+c = [[a[i][j] + b[i][j] for j in range(len(a[0]))] for i in range(len(a))]
+for i in c:
+    print(i)
+
+#Transpose Matrix
+print("Before Transpose") 
+for i in a: 
+     print(i) 
+for i in range(len(a)): 
+    for j in range(len(a[0])): 
+        c[i][j]=a[j][i] 
+for i in c: 
+    print(i)
+
+## Multiplication for two matrix 
+for i in range(len(a)): 
+    for j in range(len(a[0])): 
+        c[i][j]=0 
+        for k in range(len(a)): 
+            c[i][j]+=a[i][k]*b[k][j] 
+print("Multiplication of two matrix") 
+for i in c: 
+    print(i)
+
+
+23)
+#create a class that represents a shape
+import math
+class Shape:
+    def area(self): pass
+    def perimeter(self): pass
+class Circle(Shape):
+    def __init__(self, radius): self.radius = radius
+    def area(self): return math.pi * self.radius ** 2
+    def perimeter(self): return 2 * math.pi * self.radius
+class Triangle(Shape):
+    def __init__(self, base, height, *sides):
+        self.base, self.height, self.sides = base, height, sides
+    def area(self): return 0.5 * self.base * self.height
+    def perimeter(self): return sum(self.sides)
+class Square(Shape):
+    def __init__(self, length): self.length = length
+    def area(self): return self.length ** 2
+    def perimeter(self): return 4 * self.length
+shapes = [
+    Circle(4),
+    Triangle(3, 4, 3, 4, 5),
+    Square(3)
+]
+for shape in shapes:
+    print(f"{shape.__class__.__name__} - Area: {shape.area()}, Perimeter: {shape.perimeter()}")
