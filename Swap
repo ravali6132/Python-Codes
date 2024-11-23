@@ -1,0 +1,7 @@
+x=int(input("Enter First Number:")) 
+y=int(input("Enter Second Number:")) 
+print("Actual Values:") 
+print(f'x={x}\t y={y}') 
+x,y=y,x 
+print("After swap Values:") 
+print(f'x={x}\t y={y}') 
