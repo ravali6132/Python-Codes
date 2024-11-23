@@ -1,0 +1,35 @@
+13) #tuple
+name=('rama','krishna','babu') 
+age=(21,22,24) 
+t=name+age 
+print(t)
+
+
+14) # count vowels
+s = 'Ravali'
+v = 'aeiouAEIOU'
+lst = sum(n.count(char) for char in v)
+print("No of vowels:", lst)
+
+
+15) # given key exists in a dictionary or not
+d={'a':[1,2,3],'b':33,'c':'vasavi'} 
+print(d) 
+key=input('Enter a key:') 
+if key in d.keys(): 
+   print(key,' is Exist') 
+else: 
+   print(key,' Not Exist') 
+
+
+16) #dictionary 
+print(d) 
+d.update({'d':'directory'}) 
+print(d) 
+
+
+17) # sum of items in a dictionary
+def sum_items(d):
+    return sum(d.values())
+r = {'a': 100, 'b': 200, 'c': 300}
+print('Sum of all items:', sum_items(r))
