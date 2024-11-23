@@ -1,3 +1,0 @@
-def subStr(s, sub): 
-    return sub in s
-print(subStr('RavaliKoppisetti', 'Ravali'))
