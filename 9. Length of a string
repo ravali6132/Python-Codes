@@ -1,3 +1,0 @@
-def length(x):
-    return len(x)
-print("Length of a String:", length('vasavi'))
