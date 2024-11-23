@@ -1,0 +1,57 @@
+x, y = 10, 3
+# Arithmetic Operators
+print("Arithmetic Operators:")
+print("Addition:", x + y)      
+print("Subtraction:", x - y)    
+print("Multiplication:", x * y)
+print("Division:", x / y)      
+print("Floor Division:", x // y) 
+print("Modulus:", x % y)       
+print("Exponentiation:", x ** y) 
+# Relational Operators
+print("\nRelational Operators:")
+print("x > y:", x > y)         
+print("x < y:", x < y)         
+print("x == y:", x == y)      
+print("x != y:", x != y)       
+print("x >= y:", x >= y)      
+print("x <= y:", x <= y)     
+# Assignment Operators
+print("\nAssignment Operators:")
+x += 5; print("x += 5:", x)    
+x -= 3; print("x -= 3:", x)    
+x *= 2; print("x *= 2:", x)    
+x /= 2; print("x /= 2:", x)   
+x %= 3; print("x %= 3:", x)    
+x **= 2; print("x **= 2:", x)  
+# Logical Operators
+a, b = True, False
+print("\nLogical Operators:")
+print("a and b:", a and b)     
+print("a or b:", a or b)       
+print("not a:", not a)         
+# Bitwise Operators
+m, n = 4, 5                    
+print("\nBitwise Operators:")
+print("m & n (AND):", m & n) 
+print("m | n (OR):", m | n)    
+print("m ^ n (XOR):", m ^ n)   
+print("~m (NOT):", ~m)        
+print("m << 1 (Left Shift):", m << 1) 
+print("n >> 1 (Right Shift):", n >> 1) 
+# Ternary Operator
+g, h = 5, 10
+print("\nTernary Operator:")
+print("g is greater than h" if g > h else "h is greater than or equal to g")
+# Membership Operators
+lst = [1, 2, 3, 4, 5]
+print("\nMembership Operators:")
+print("3 in lst:", 3 in lst)   
+print("6 not in lst:", 6 not in lst) 
+# Identity Operators
+a, b = [1, 2, 3], [1, 2, 3]
+z = a
+print("\nIdentity Operators:")
+print("a is z:", a is z)      
+print("a is b:", a is b)      
+print("a == b:", a == b)       
