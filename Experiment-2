@@ -1,0 +1,49 @@
+7) #Function that returns multiple values 
+def calculate_operations(a, b):  
+    return a + b, a - b, a * b
+num1, num2 = 10, 5
+results = calculate_operations(num1, num2)
+print("Sum:", results[0])
+print("Difference:", results[1])
+print("Product:", results[2])
+
+
+8) #Function with default arguments
+def power(base=2, exponent=3):
+    return base ** exponent
+print("Default power (2^3):", power())
+print("Power with base 4 (4^3):", power(4))
+print("Power with base 5 and exponent 2 (5^2):", power(5, 2))
+
+
+9) #length of a string
+def length(x):
+    return len(x)
+print("Length of a String:", length('vasavi'))
+
+
+10) #substring is present in string or not
+def subStr(s, sub): 
+    return sub in s
+print(subStr('RavaliKoppisetti', 'Ravali'))
+
+
+11) #addition,insertion,slicing
+lst = [1, 2, 3, 4, 5]
+lst.append(6)
+print("After addition:", lst)
+lst.insert(2, 9)
+print("After insertion:", lst)
+print("After slicing:", lst[1:4])
+
+
+12) #5built in functions
+lst = [1, 2, 3, 4, 5, 6, 3, 9]  
+print("Count:", lst.count(9))
+print("Index:", lst.index(3))
+lst.sort()
+print("Sort:", lst)
+lst.reverse()
+print("Reverse:", lst)
+lst.extend([7, 8, 9])
+print("Extend:", lst)

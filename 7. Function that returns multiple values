@@ -1,7 +1,0 @@
-def calculate_operations(a, b):  
-    return a + b, a - b, a * b
-num1, num2 = 10, 5
-results = calculate_operations(num1, num2)
-print("Sum:", results[0])
-print("Difference:", results[1])
-print("Product:", results[2])
