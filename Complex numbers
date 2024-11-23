@@ -1,0 +1,8 @@
+z1 = (3, 4) 
+z2 = (1, 2) 
+add_real = z1[0] + z2[0]  
+add_imaginary = z1[1] + z2[1]  
+print("Sum:", add_real, "+", add_imaginary, "i")  
+multiply_real = z1[0] * z2[0] - z1[1] * z2[1]  
+multiply_imaginary = z1[0] * z2[1] + z1[1] * z2[0]  
+print("Product:", multiply_real, "+", multiply_imaginary, "i")
