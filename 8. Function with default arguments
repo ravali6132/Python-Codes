@@ -1,5 +1,0 @@
-def power(base=2, exponent=3):
-    return base ** exponent
-print("Default power (2^3):", power())
-print("Power with base 4 (4^3):", power(4))
-print("Power with base 5 and exponent 2 (5^2):", power(5, 2))
