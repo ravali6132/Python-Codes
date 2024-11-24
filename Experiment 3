@@ -8,7 +8,7 @@ print(t)
 14) # count vowels
 s = 'Ravali'
 v = 'aeiouAEIOU'
-lst = sum(n.count(char) for char in v)
+lst = sum(s.count(char) for char in v)
 print("No of vowels:", lst)
 
 
