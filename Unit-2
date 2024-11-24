@@ -17,9 +17,14 @@ print("Power with base 5 and exponent 2 (5^2):", power(5, 2))
 
 
 9) #length of a string
-def length(x):
-    return len(x)
-print("Length of a String:", length('vasavi'))
+def string_length(input_string):
+    count = 0
+    for char in input_string:
+        count += 1
+    return count
+string = "Ravali"
+length = string_length(string)
+print(f"The length of the string is: {length}")
 
 
 10) #substring is present in string or not
